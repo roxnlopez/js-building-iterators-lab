@@ -4,8 +4,20 @@
 function myReduce(arr, callback) {
 
 //  CODE INSIDE HERE   //
-
+//need values to execute function
+//IF you don’t have an accumulator THEN set the array’s first value as the accumulator.  
+//ELSE the accumulator is set to the callback.
+    for (var i = 0; i < arr.length; i++) {
+    		if (arr == "undefined" && i===0){
+    			arr = arr[i];
+    		} else {
+    			callback(arr, arr[i]);
+    	}  
+    }
+    return callback(arr);
 }
+ //console.log("accumulators suck");
+
 
 /*
  Best if you don't code out here.
