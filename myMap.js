@@ -3,7 +3,14 @@
 function myMap(arr, callback) {
 
 //  CODE INSIDE HERE   //
-
+   //create new array
+   var newArray = [];
+   	//call every array element
+   	for (var i=0; i<arr.length; i++){
+	newArray.push(callback(arr[i], i, arr));
+	//want to return function on every array
+	}
+	return newArray;
 }
 
 /*
