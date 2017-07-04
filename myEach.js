@@ -3,8 +3,13 @@
 function myEach(arr, callback) {
   
   //  CODE INSIDE HERE   //
-
+  //need to create a for loop to 
+  for (var i=0; i<arr.length; i++) {
+  	//run the function on each element in arr
+  	callback(arr[i], i, arr);
+  }
 }
+
 
 /*
  Best if you don't code out here.
